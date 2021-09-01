@@ -1,12 +1,37 @@
-*{
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
+div.child {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
 }
 
-h1{
-    color: aquamarine;
-    text-align: center;
-    border: thin;
-    
+div.child:hover {
+    background-color: blue;
 }
+
+input:focus {
+    background-color: orange;
+}
+
+div::selection {
+    color: brown;
+}
+
+li {
+    list-style: none;
+    font-size: 4rem;
+    position: relative;
+    width: 200px;
+    display: inline-block;
+}
+
+li::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: blueviolet;
+    right: 10px;
+    top: 30px;
+}
+/*  */
